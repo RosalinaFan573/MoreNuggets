@@ -1,6 +1,5 @@
 package mods.rfan573.morenuggets;
 
-import net.fybertech.meddle.Meddle;
 import net.fybertech.meddle.MeddleMod;
 import net.fybertech.meddleapi.MeddleAPI;
 import net.minecraft.init.Items;
@@ -13,110 +12,64 @@ import net.minecraft.creativetab.CreativeTabs;
 @MeddleMod(id = "MoreNuggets")
 public class MoreNuggets {
 
-//Item Definitions I
+	//Item Definitions I
 	public static Item itemNuggetIron;
-
 	public static Item itemNuggetDiamond;
-
 	public static Item itemNuggetLapis;
-
 	public static Item itemNuggetObsidian;
-
 	public static Item itemNuggetEmerald;
-
 	public static Item itemNuggetDiorite;
-
 	public static Item itemNuggetAndesite;
-
 	public static Item itemNuggetGranite;
-
 	public static Item itemNuggetChorus;
-
 	public static Item itemNuggetPrismarine;
-
 	public static Item itemStoneBrick;
-
 	public static Item itemNuggetQuartz;
-
 	public static Item itemNuggetChicken;
-
 	public static Item itemNuggetStone;
-
 	public static Item itemNuggetBiscuit;
-
 	public static Item itemShardObsidian;
 
 	public void init()
 	{
 
-//Item Definitions II
-		itemNuggetIron = new ItemIronNugget().setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetIron");
+		//Item Definitions II
+		itemNuggetIron = new ItemMoreNuggets("Iron Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetIron");
+		itemNuggetDiamond = new ItemMoreNuggets("Diamond Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetDiamond");
+		itemNuggetLapis = new ItemMoreNuggets("Lapis Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetLapis");
+		itemNuggetObsidian = new ItemMoreNuggets("Obsidian Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetObsidian");
+		itemNuggetEmerald = new ItemMoreNuggets("Emerald Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetEmerald");
+		itemNuggetDiorite = new ItemMoreNuggets("Diorite Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetDiorite");
+		itemNuggetAndesite = new ItemMoreNuggets("Andesite Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetAndesite");
+		itemNuggetGranite = new ItemMoreNuggets("Granite Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetGranite");
+		itemNuggetChorus = new ItemMoreNuggets("Chorus Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetChorus");
+		itemNuggetPrismarine = new ItemMoreNuggets("Prismarine Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetPrismarine");
+		itemStoneBrick = new ItemMoreNuggets("Stone Brick").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("stoneBrickItem");
+		itemNuggetQuartz = new ItemMoreNuggets("Quartz Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetQuartz");
+		itemNuggetChicken = new ItemMoreNuggets("Chicken Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetChicken");
+		itemNuggetStone = new ItemMoreNuggets("Stone Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetStone");
+		itemNuggetBiscuit = new ItemMoreNuggets("Nugget in a Biscuit").setCreativeTab(CreativeTabs.tabFood).setUnlocalizedName("nuggetInABiscuit");
+		itemShardObsidian = new ItemMoreNuggets("Obsidian Shard").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("shardObsidian");
 
-		itemNuggetDiamond = new ItemDiamondNugget().setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetDiamond");
-
-		itemNuggetLapis = new ItemLapisNugget().setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetLapis");
-
-		itemNuggetObsidian = new ItemObsidianNugget().setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetObsidian");
-
-		itemNuggetEmerald = new ItemEmeraldNugget().setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetEmerald");
-
-		itemNuggetDiorite = new ItemDioriteNugget().setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetDiorite");
-
-		itemNuggetAndesite = new ItemAndesiteNugget().setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetAndesite");
-
-		itemNuggetGranite = new ItemGraniteNugget().setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetGranite");
-
-		itemNuggetChorus = new ItemChorusNugget().setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetChorus");
-
-		itemNuggetPrismarine = new ItemPrismarineNugget().setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetPrismarine");
-
-		itemStoneBrick = new ItemStoneBrick().setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("stoneBrickItem");
-
-		itemNuggetQuartz = new ItemQuartzNugget().setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetQuartz");
-
-		itemNuggetChicken = new ItemChickenNugget().setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetChicken");
-
-		itemNuggetStone = new ItemStoneNugget().setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetStone");
-
-		itemNuggetBiscuit = new ItemNuggetInABiscuit().setCreativeTab(CreativeTabs.tabFood).setUnlocalizedName("nuggetInABiscuit");
-
-		itemShardObsidian = new ItemObsidianShard().setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("shardObsidian");
-
-
-//MeddleAPI Registers
+		//MeddleAPI Registers
 		MeddleAPI.registerItem(1400, "iron_nugget", itemNuggetIron);
-
 		MeddleAPI.registerItem(1401, "diamond_nugget", itemNuggetDiamond);
-
 		MeddleAPI.registerItem(1402, "lapis_nugget", itemNuggetLapis);
-
 		MeddleAPI.registerItem(1403, "obsidian_nugget", itemNuggetObsidian);
-
 		MeddleAPI.registerItem(1404, "emerald_nugget", itemNuggetEmerald);
-
 		MeddleAPI.registerItem(1405, "diorite_nugget", itemNuggetDiorite);
-
 		MeddleAPI.registerItem(1406, "andesite_nugget", itemNuggetAndesite);
-
 		MeddleAPI.registerItem(1407, "granite_nugget", itemNuggetGranite);
-
 		MeddleAPI.registerItem(1408, "chorus_nugget", itemNuggetChorus);
-
 		MeddleAPI.registerItem(1409, "prismarine_nugget", itemNuggetPrismarine);
-
 		MeddleAPI.registerItem(1410, "stone_brick", itemStoneBrick);
-
 		MeddleAPI.registerItem(1411, "quartz_nugget", itemNuggetQuartz);
-
 		MeddleAPI.registerItem(1412, "chicken_nugget", itemNuggetChicken);
-
 		MeddleAPI.registerItem(1413, "stone_nugget", itemNuggetStone);
-
 		MeddleAPI.registerItem(1414, "nugget_in_a_biscuit", itemNuggetBiscuit);
-
 		MeddleAPI.registerItem(1415, "obsidian_shard", itemShardObsidian);
 
-//Crafting Recipes
+		//Crafting Recipes
 		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetIron, 9), "i", Character.valueOf('i'), Items.iron_ingot);
 		CraftingManager.getInstance().addRecipe(new ItemStack(Items.iron_ingot), "iii", "iii", "iii", Character.valueOf('i'), itemNuggetIron);
 
@@ -166,5 +119,5 @@ public class MoreNuggets {
 
 		CommonProxy proxy = (CommonProxy)MeddleAPI.createProxyInstance("mods.rfan573.morenuggets.CommonProxy", "mods.rfan573.morenuggets.ClientProxy");
 		proxy.init();
-}
+	}
 }
