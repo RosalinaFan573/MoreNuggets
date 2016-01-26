@@ -12,45 +12,25 @@ import net.minecraft.creativetab.CreativeTabs;
 @MeddleMod(id = "MoreNuggets")
 public class MoreNuggets {
 
-	//Item Definitions I
-	public static Item itemNuggetIron;
-	public static Item itemNuggetDiamond;
-	public static Item itemNuggetLapis;
-	public static Item itemNuggetObsidian;
-	public static Item itemNuggetEmerald;
-	public static Item itemNuggetDiorite;
-	public static Item itemNuggetAndesite;
-	public static Item itemNuggetGranite;
-	public static Item itemNuggetChorus;
-	public static Item itemNuggetPrismarine;
-	public static Item itemStoneBrick;
-	public static Item itemNuggetQuartz;
-	public static Item itemNuggetChicken;
-	public static Item itemNuggetStone;
-	public static Item itemNuggetBiscuit;
-	public static Item itemShardObsidian;
+	//Item Definitions
+	public static Item itemNuggetIron = new ItemMoreNuggets("Iron Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetIron");
+	public static Item itemNuggetDiamond = new ItemMoreNuggets("Diamond Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetDiamond");
+	public static Item itemNuggetLapis = new ItemMoreNuggets("Lapis Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetLapis");
+	public static Item itemNuggetObsidian = new ItemMoreNuggets("Obsidian Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetObsidian");
+	public static Item itemNuggetEmerald = new ItemMoreNuggets("Emerald Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetEmerald");
+	public static Item itemNuggetDiorite = new ItemMoreNuggets("Diorite Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetDiorite");
+	public static Item itemNuggetAndesite = new ItemMoreNuggets("Andesite Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetAndesite");
+	public static Item itemNuggetGranite = new ItemMoreNuggets("Granite Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetGranite");
+	public static Item itemNuggetChorus = new ItemMoreNuggets("Chorus Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetChorus");
+	public static Item itemNuggetPrismarine = new ItemMoreNuggets("Prismarine Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetPrismarine");
+	public static Item itemStoneBrick = new ItemMoreNuggets("Stone Brick").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("stoneBrickItem");
+	public static Item itemNuggetQuartz = new ItemMoreNuggets("Quartz Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetQuartz");
+	public static Item itemNuggetChicken = new ItemMoreNuggets("Chicken Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetChicken");
+	public static Item itemNuggetStone = new ItemMoreNuggets("Stone Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetStone");
+	public static Item itemNuggetBiscuit = new ItemMoreNuggets("Nugget in a Biscuit").setCreativeTab(CreativeTabs.tabFood).setUnlocalizedName("nuggetInABiscuit");
+	public static Item itemShardObsidian = new ItemMoreNuggets("Obsidian Shard").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("shardObsidian");
 
-	public void init()
-	{
-
-		//Item Definitions II
-		itemNuggetIron = new ItemMoreNuggets("Iron Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetIron");
-		itemNuggetDiamond = new ItemMoreNuggets("Diamond Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetDiamond");
-		itemNuggetLapis = new ItemMoreNuggets("Lapis Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetLapis");
-		itemNuggetObsidian = new ItemMoreNuggets("Obsidian Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetObsidian");
-		itemNuggetEmerald = new ItemMoreNuggets("Emerald Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetEmerald");
-		itemNuggetDiorite = new ItemMoreNuggets("Diorite Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetDiorite");
-		itemNuggetAndesite = new ItemMoreNuggets("Andesite Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetAndesite");
-		itemNuggetGranite = new ItemMoreNuggets("Granite Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetGranite");
-		itemNuggetChorus = new ItemMoreNuggets("Chorus Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetChorus");
-		itemNuggetPrismarine = new ItemMoreNuggets("Prismarine Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetPrismarine");
-		itemStoneBrick = new ItemMoreNuggets("Stone Brick").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("stoneBrickItem");
-		itemNuggetQuartz = new ItemMoreNuggets("Quartz Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetQuartz");
-		itemNuggetChicken = new ItemMoreNuggets("Chicken Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetChicken");
-		itemNuggetStone = new ItemMoreNuggets("Stone Nugget").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("nuggetStone");
-		itemNuggetBiscuit = new ItemMoreNuggets("Nugget in a Biscuit").setCreativeTab(CreativeTabs.tabFood).setUnlocalizedName("nuggetInABiscuit");
-		itemShardObsidian = new ItemMoreNuggets("Obsidian Shard").setCreativeTab(CreativeTabs.tabMaterials).setUnlocalizedName("shardObsidian");
-
+	public void init() {
 		//MeddleAPI Registers
 		MeddleAPI.registerItem(1400, "iron_nugget", itemNuggetIron);
 		MeddleAPI.registerItem(1401, "diamond_nugget", itemNuggetDiamond);
