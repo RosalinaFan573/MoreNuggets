@@ -3,15 +3,16 @@ package mods.rfan573.morenuggets;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-public class ItemEmeraldNugget extends Item
+public class ItemMoreNuggets extends Item
 {
-
-    public ItemEmeraldNugget()
-    {
+    private String name;
+    
+    public ItemMoreNuggets(String name){
+        this.name = name;
     }
 
     @Override
     public String getItemStackDisplayName(ItemStack param0) {
-        return "Emerald Nugget";
+        return name;
     }
 }
