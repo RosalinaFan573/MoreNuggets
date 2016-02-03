@@ -34,7 +34,7 @@ minecraft {
 
 jar {
     baseName = 'MoreNuggets'
-    version = '1.3'
+    version = '1.4'
     
     manifest {
 		attributes('MeddleAPI-Mods' : 'mods.rfan573.morenuggets.MoreNuggets')
