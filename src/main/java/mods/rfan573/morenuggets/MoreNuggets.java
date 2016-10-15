@@ -9,7 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.CraftingManager;
 import net.minecraft.creativetab.CreativeTabs;
 
-@MeddleMod(id = "MoreNuggets")
+@MeddleMod(id = "MoreNuggets", author = "RosalinaFan573")
 public class MoreNuggets {
 
 	//Item Definitions
@@ -53,17 +53,17 @@ public class MoreNuggets {
 		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetIron, 9), "i", Character.valueOf('i'), Items.iron_ingot);
 		CraftingManager.getInstance().addRecipe(new ItemStack(Items.iron_ingot), "iii", "iii", "iii", Character.valueOf('i'), itemNuggetIron);
 
-		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetDiamond, 9), "d", Character.valueOf('d'), Items.k);
-		CraftingManager.getInstance().addRecipe(new ItemStack(Items.k), "ddd", "ddd", "ddd", Character.valueOf('d'), itemNuggetDiamond);
+		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetDiamond, 9), "d", Character.valueOf('d'), Items.l);
+		CraftingManager.getInstance().addRecipe(new ItemStack(Items.l), "ddd", "ddd", "ddd", Character.valueOf('d'), itemNuggetDiamond);
 
-		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetLapis, 9), "l", Character.valueOf('l'), new ItemStack(Items.bd, 1, 4));
-		CraftingManager.getInstance().addRecipe(new ItemStack(Items.bd, 1, 4), "lll", "lll", "lll", Character.valueOf('l'), itemNuggetLapis);
+		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetLapis, 9), "l", Character.valueOf('l'), new ItemStack(Items.be, 1, 4));
+		CraftingManager.getInstance().addRecipe(new ItemStack(Items.be, 1, 4), "lll", "lll", "lll", Character.valueOf('l'), itemNuggetLapis);
 
 		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetObsidian, 9), "o", Character.valueOf('o'), itemShardObsidian);
 		CraftingManager.getInstance().addRecipe(new ItemStack(itemShardObsidian), "ooo", "ooo", "ooo", Character.valueOf('o'), itemNuggetObsidian);
 
-		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetEmerald, 9), "e", Character.valueOf('e'), Items.bY);
-		CraftingManager.getInstance().addRecipe(new ItemStack(Items.bY), "eee", "eee", "eee", Character.valueOf('e'), itemNuggetEmerald);
+		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetEmerald, 9), "e", Character.valueOf('e'), Items.bZ);
+		CraftingManager.getInstance().addRecipe(new ItemStack(Items.bZ), "eee", "eee", "eee", Character.valueOf('e'), itemNuggetEmerald);
 
 		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetDiorite, 9), "d", Character.valueOf('d'), new ItemStack(Blocks.stone, 1, 4));
 		CraftingManager.getInstance().addRecipe(new ItemStack(Blocks.stone, 1, 4), "ddd", "ddd", "ddd", Character.valueOf('d'), itemNuggetDiorite);
@@ -74,25 +74,25 @@ public class MoreNuggets {
 		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetGranite, 9), "g", Character.valueOf('g'), new ItemStack(Blocks.stone, 1, 2));
 		CraftingManager.getInstance().addRecipe(new ItemStack(Blocks.stone, 1, 2), "ggg", "ggg", "ggg", Character.valueOf('g'), itemNuggetGranite);
 
-		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetChorus, 9), "c", Character.valueOf('c'), Items.cT);
-		CraftingManager.getInstance().addRecipe(new ItemStack(Items.cT), "ccc", "ccc", "ccc", Character.valueOf('c'), itemNuggetChorus);
+		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetChorus, 9), "c", Character.valueOf('c'), Items.cU);
+		CraftingManager.getInstance().addRecipe(new ItemStack(Items.cU), "ccc", "ccc", "ccc", Character.valueOf('c'), itemNuggetChorus);
 
-		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetPrismarine, 9), "p", Character.valueOf('p'), Items.cM);
-		CraftingManager.getInstance().addRecipe(new ItemStack(Items.cM), "ppp", "ppp", "ppp", Character.valueOf('p'), itemNuggetPrismarine);
+		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetPrismarine, 9), "p", Character.valueOf('p'), Items.cN);
+		CraftingManager.getInstance().addRecipe(new ItemStack(Items.cN), "ppp", "ppp", "ppp", Character.valueOf('p'), itemNuggetPrismarine);
 
 		CraftingManager.getInstance().addRecipe(new ItemStack(itemStoneBrick, 9), "b", Character.valueOf('b'), new ItemStack(Blocks.bf, 1, 0));
 		CraftingManager.getInstance().addRecipe(new ItemStack(Blocks.bf, 1, 0), "bbb", "bbb", "bbb", Character.valueOf('b'), itemStoneBrick);
 
-		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetQuartz, 9), "q", Character.valueOf('q'), Items.cq);
-		CraftingManager.getInstance().addRecipe(new ItemStack(Items.cq), "qqq", "qqq", "qqq", Character.valueOf('q'), itemNuggetQuartz);
+		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetQuartz, 9), "q", Character.valueOf('q'), Items.cr);
+		CraftingManager.getInstance().addRecipe(new ItemStack(Items.cr), "qqq", "qqq", "qqq", Character.valueOf('q'), itemNuggetQuartz);
 
-		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetChicken, 9), "c", Character.valueOf('c'), Items.bs);
-		CraftingManager.getInstance().addRecipe(new ItemStack(Items.bs), "ccc", "ccc", "ccc", Character.valueOf('c'), itemNuggetChicken);
+		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetChicken, 9), "c", Character.valueOf('c'), Items.bt);
+		CraftingManager.getInstance().addRecipe(new ItemStack(Items.bt), "ccc", "ccc", "ccc", Character.valueOf('c'), itemNuggetChicken);
 
 		CraftingManager.getInstance().addRecipe(new ItemStack(itemNuggetStone, 9), "s", Character.valueOf('s'), itemStoneBrick);
 		CraftingManager.getInstance().addRecipe(new ItemStack(itemStoneBrick), "sss", "sss", "sss", Character.valueOf('s'), itemNuggetStone);
 
-		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(itemNuggetBiscuit), Items.R, itemNuggetChicken);
+		CraftingManager.getInstance().addShapelessRecipe(new ItemStack(itemNuggetBiscuit), Items.S, itemNuggetChicken);
 
 		CraftingManager.getInstance().addRecipe(new ItemStack(itemShardObsidian, 9), "o", Character.valueOf('o'), Blocks.obsidian);
 		CraftingManager.getInstance().addRecipe(new ItemStack(Blocks.obsidian), "ooo", "ooo", "ooo", Character.valueOf('o'), itemShardObsidian);
